@@ -26,9 +26,10 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
+// We create a variable called 'name' and set its value to a string 'Dane'.
+// We then make a conditional, where if the value of name is 'Mary', the console will log 'Hi, Mary!'; 
+// otherwise, if the value of name is anything other than 'Mary', the console will log 'How do you do?'
+// Since name = 'Dane', we should see 'How do you do?' as the value if we console log 'name'.
 //
 
 //CODE
@@ -43,12 +44,21 @@ if (name === 'Mary') {
 
 
 */
+let name = 'Dane';
+
+if (name === 'Mary') {
+  console.log('Hi, Mary!');
+} else {
+  console.log('How do you do?');
+}
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We create a variable called 'secret'.
+// we create another variable called 'code' with a value of the number 123.
+// We make a conditional 'if' statement: if the value of code is exactly 123, the value of the variable 'secret' will be a string, 'super'.
+// If 'code' is 123 it will also multiply itself by 2.
+// If the variable 'code' is greater than 250, the value of variable 'secret' will be a string, 'duper'.
+// Then we console log 'secret', with a value of 'super'.
 
 //CODE
 /*
@@ -68,12 +78,31 @@ if (code > 250) {
 console.log(secret)
 
 */
+let secret;
+
+let code = 123;
+
+if(code === 123) {
+  secret = 'super';
+  code = code * 2;
+}
+
+if (code > 250) {
+  secret = 'duper'
+}
+
+console.log(secret)
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We create a variable 'isStudent' with a Boolean value of 'true'.
+// We create another variable 'age' with a value of 34.
+// We create a third variable 'zip' with a value of 55407.
+// We make a conditional 'if' statement: if the value of 'isStudent' is true AND the value of zip is greater than 8000, the console will log "You're a student on the West Coast!"
+// Or, if the value of 'isStudent' is false OR the value of age is less than 30, the console will log "What are your hobbies?"
+// Or, if the value of 'isStudent' is true and the zip is less than or equal to 8000, the console will log "Welcome to Prime!"
+// Otherwise, the console will log "How about the weather?"
+// Since isStudent = true but zip is less than 8000, and the age is greater than 30, neither of the first two conditions will be satisfied and we will go to the third condition.
+// The console will log "Welcome to Prime!"
 
 //CODE
 /*
