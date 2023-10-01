@@ -26,8 +26,8 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// We create a variable called 'name' and set its value to a string 'Dane'.
-// We then make a conditional, where if the value of name is 'Mary', the console will log 'Hi, Mary!'; 
+// We create a variable called 'name' with a string value of 'Dane'.
+// We check if the name is 'Mary', in which case the console will log 'Hi, Mary!'; 
 // otherwise, if the value of name is anything other than 'Mary', the console will log 'How do you do?'
 // Since name = 'Dane', we should see 'How do you do?' as the value if we console log 'name'.
 //
@@ -44,13 +44,6 @@ if (name === 'Mary') {
 
 
 */
-let name = 'Dane';
-
-if (name === 'Mary') {
-  console.log('Hi, Mary!');
-} else {
-  console.log('How do you do?');
-}
 
 // 2. WRITE YOUR DESCRIPTION HERE
 // We create a variable called 'secret'.
@@ -78,20 +71,6 @@ if (code > 250) {
 console.log(secret)
 
 */
-let secret;
-
-let code = 123;
-
-if(code === 123) {
-  secret = 'super';
-  code = code * 2;
-}
-
-if (code > 250) {
-  secret = 'duper'
-}
-
-console.log(secret)
 
 // 3. WRITE YOUR DESCRIPTION HERE
 // We create a variable 'isStudent' with a Boolean value of 'true'.
@@ -159,10 +138,13 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
+// FIX - colorOne = 'red' and colorTwo = 'blue', but the instructions say the reverse. Should be let colorOne = 'blue'; let colorTwo = 'red'
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
 
+//FIX - the instructions say to set colorOne AND colorTwo to 'purple', but only colorOne is set to 'purple'.
+// Should have an additional 'colorTwo = 'purple';' below 'colorOne = 'purple';'
 if (mix === true) {
   colorOne = 'purple';
 }
@@ -172,6 +154,8 @@ if (mix === true) {
 // We check if temp is higher than 39 and if time is greater or equal to  4 
 // -- they are so we console.log 'throw away the food!'
 
+// FIX - Time is set as a constant but it should be a variable; instead of const time = 4 it should be let time = 4.
+// The double bars || mean or, not and. It should be && instead. if (temp > 39 && time >= 4)...
 /*
 let temp = 40;
 const time = 4;
@@ -185,10 +169,12 @@ if (temp > 39 || time >= 4) {
 // We check if age is greater than or equal to minAge 
 // -- it is, so we console.log 'enter'.
 
+// FIX - if we want minAge to be a variable, and not a constant, it should be let minAge = 21.
 /*
 let age = 21;
 const minAge = 21;
 
+// FIX - this is checking if minAge is less than or equal to age; we want to check if age is >= minAge. Should be if(age >= minAge)...
 if(minAge <= age) {
   console.log('no entry');
 } else {
